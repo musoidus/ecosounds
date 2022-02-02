@@ -13,7 +13,7 @@ function preloadImages() {
     let bird = el.dataset.bird;
     console.log(bird);
     const img = new Image();
-    img.src = `../assets/img/${bird}.jpg`;
+    img.src = `../img/${bird}.jpg`;
   }
 }
 preloadImages();
@@ -22,16 +22,16 @@ function playAudio() {
   if (isPlay) {
     audio.pause();
     isPlay = false;
-    play.style.background = 'url(../assets/svg/play.svg)';
+    play.style.background = 'url(../svg/play.svg)';
   } else {
     let curBird = nav.querySelector('.active')
       ? nav.querySelector('.active').dataset.bird
       : 'forest';
-    audio.src = `../assets/audio/${curBird}.mp3`;
+    audio.src = `../audio/${curBird}.mp3`;
     audio.currentTime = 0;
     audio.play();
     isPlay = true;
-    play.style.background = 'url(../assets/svg/pause.svg)';
+    play.style.background = 'url(../svg/pause.svg)';
   }
 }
 
@@ -41,7 +41,7 @@ function changeActive(set, el, className) {
 }
 function changeBackground(bird) {
   console.log('bg change');
-  main.style.background = `url(../assets/img/${bird}.jpg)`;
+  main.style.background = `url(../img/${bird}.jpg)`;
 }
 
 function changeBird(event) {
