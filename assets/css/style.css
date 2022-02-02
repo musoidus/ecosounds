@@ -1,6 +1,13 @@
 /* MAIN SETTINGS */
+@font-face {
+  font-weight: 400;
+  font-family: Chronicle Display;
+  src: url(../font/ChronicleDisplayRoman.otf);
+}
+
 * {
   color: #fff;
+  font-family: Chronicle Display;
   box-sizing: border-box;
 }
 html {
@@ -26,7 +33,7 @@ a:hover {
 
 .main {
   height: calc(100vh - 20vh);
-  background: url(../img/solovey.jpg) no-repeat;
+  background: url(../img/forest.jpg) no-repeat;
   background-size: cover;
   box-shadow: inset 0 80px 60px -15px #0b1d26, inset 0 -80px 60px -15px #0b1d26;
 }
@@ -87,8 +94,8 @@ a:hover {
   align-items: center;
 }
 .play {
-  width: 160px;
-  height: 160px;
+  width: 130px;
+  height: 130px;
   background: url(../svg/play.svg) no-repeat;
   background-size: 100% auto;
   border: none;
