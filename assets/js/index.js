@@ -48,7 +48,7 @@ function changeBird(event) {
   if (event.target.classList.contains('nav-item')) {
     audio.pause();
     isPlay = false;
-    play.style.background = 'url(../assets/svg/play.svg)';
+    play.style.background = 'url(../svg/play.svg)';
     const curBird = event.target.dataset.bird;
     changeActive(navItems, event.target, 'active');
     changeBackground(curBird);
